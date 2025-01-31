@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Sofía 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background-color: #f5e6f9;
+      color: #6a1b9a;
+      padding: 30px;
+      margin: 0;
+    }
+    .carta {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      max-width: 600px;
+      margin-top: 20px;
+      text-align: center;
+    }
+    .carta h2 {
+      font-size: 36px;
+      color: #d63384;
+    }
+    .carta p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .ruleta-container {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+    }
+    .ruleta {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(#ff66b2 0deg 45deg, #ff99cc 45deg 90deg, #ff66b2 90deg 135deg, #ff99cc 135deg 180deg, #ff66b2 180deg 225deg, #ff99cc 225deg 270deg, #ff66b2 270deg 315deg, #ff99cc 315deg 360deg);
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 4s cubic-bezier(0.1, 1, 0.3, 1);
+    }
+    .puntero {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 20px solid #d63384;
+    }
+    .emoji {
+      position: absolute;
+      font-size: 40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .emoji:nth-child(1) { top: 15%; left: 50%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(2) { top: 35%; left: 85%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(3) { top: 65%; left: 85%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(4) { top: 85%; left: 50%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(5) { top: 65%; left: 15%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(6) { top: 35%; left: 15%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(7) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .emoji:nth-child(8) { top: 10%; left: 20%; transform: translate(-50%, -50%); }
+    .boton {
+      background-color: #d63384;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    .boton:hover {
+      background-color: #c2185b;
+    }
+    .imagenes-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .imagen-interactiva {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    .imagen-interactiva:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <h2>Para mi Sofía 💕</h2>
+    <p>Hola mi chikibebe. Quiero recordarte lo increíble que eres y lo mucho que significas para mí. No importa lo que pase, siempre estaré aquí para amarte, apoyarte y hacerte sonreír. 💖</p>
+    <p>Gira la ruleta y descubre un mensaje especial para ti. 🎡</p>
+    <div class="ruleta-container">
+      <div class="puntero"></div>
+      <div class="ruleta" id="ruleta">
+        <span class="emoji">💘</span>
+        <span class="emoji">🌟</span>
+        <span class="emoji">💖</span>
+        <span class="emoji">💕</span>
+        <span class="emoji">💞</span>
+        <span class="emoji">💗</span>
+        <span class="emoji">💌</span>
+        <span class="emoji">❤️</span>
+      </div>
+    </div>
+    <button class="boton" onclick="girarRuleta()">Girar Ruleta</button>
+    <p id="mensaje"></p>
+
+    <!-- Aquí agregas la imagen -->
+    <div class="imagenes-container">
+      <img src="C:/Users/mariana/Downloads/ositos.png" alt="Ositos" class="imagen-interactiva">
+    </div>
+
+    <div class="carta">
+        <p class="texto-centro">
+            Amoooor, hoy de nuevo quiero recordarte cuánto te amo. Todos los fokins días me siento tan feliz y afortunada de tenerte como mi novia. ¿Cómo puedo tener una novia tan linda? Es que no solo hablo de cómo te ves, aunque cuando estoy cerca tuyo me pongo como tontita y en lo único que pienso es en que eres la chica más bella del fokin mundo.<br><br>
+            Eres mi universo entero, mi cielo estrellado, mi sol en los días nublados. Amarte es lo más bonito que me ha pasado, y te juro que lo haré en todas las estaciones, en todas las vidas y en todos los universos. Si el tiempo se detuviera, mi amor por ti seguiría latiendo. Si todo desapareciera, mi alma te seguiría buscando.<br><br>
+            Eres mi primavera, porque contigo todo florece.<br>
+            Eres mi verano, porque calientas mi corazón.<br>
+            Eres mi otoño, porque hasta en los cambios sigues siendo mi hogar.<br>
+            Eres mi invierno, porque incluso en el frío, en ti encuentro calor.<br>
+            No importa dónde, no importa cuándo, siempre serás mi amor eterno. Te amaré en esta vida y en todas las que vengan. En cada mundo, en cada estrella, en cada historia. Porque tú y yo estamos destinadas a encontrarnos, una y otra vez.
+        </p>
+    </div>
+  </div>
+
+  <script>
+    let últimoÁngulo = 0;
+
+    function girarRuleta() {
+      const ruleta = document.getElementById("ruleta");
+      const mensajes = [
+        "Eres el amor de mi vida 💘",
+        "Tu sonrisa ilumina mi mundo 🌟",
+        "Cada día a tu lado es el mejor 💖",
+        "Eres mi razón de ser 💕",
+        "Prometo amarte siempre 💞",
+        "Te amo de aquí a la luna 💗",
+        "Eres mi persona favorita ¿Lo sabes? 💌",
+        "Juntas para siempre ❤️"
+      ];
+
+      const giroExtra = Math.floor(Math.random() * 1000);
+      const anguloFinal = 360 * 5 + giroExtra;
+
+      ruleta.style.transition = "transform 4s cubic-bezier(0.1, 1, 0.3, 1)";
+      ruleta.style.transform = `rotate(${anguloFinal}deg)`;
+
+      setTimeout(() => {
+        const mensajeAleatorio = mensajes[giroExtra % mensajes.length];
+        document.getElementById("mensaje").textContent = mensajeAleatorio;
+      }, 4000); // Esperar a que termine la animación para mostrar el mensaje
+    }
+  </script>
+</body>
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Sofía 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        background-color: #f5e6f9;
+        color: #6a1b9a;
+        padding: 30px;
+        margin: 0;
+      }
+      .carta {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        display: inline-block;
+        max-width: 600px;
+        margin-top: 20px;
+        text-align: center;
+        width: 90%;
+      }
+      .carta h2 {
+        font-size: 32px;
+        color: #d63384;
+      }
+      .carta p {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+      }
+      .ruleta-container {
+        position: relative;
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        margin: 20px auto;
+      }
+      .ruleta {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background: conic-gradient(#ff66b2 0deg 45deg, #ff99cc 45deg 90deg, #ff66b2 90deg 135deg, #ff99cc 135deg 180deg, #ff66b2 180deg 225deg, #ff99cc 225deg 270deg, #ff66b2 270deg 315deg, #ff99cc 315deg 360deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 4s cubic-bezier(0.1, 1, 0.3, 1);
+      }
+      .boton {
+        background-color: #d63384;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+      }
+      .boton:hover {
+        background-color: #c2185b;
+      }
+      .imagenes-container {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .imagen-interactiva {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+      .imagen-interactiva:hover {
+        transform: scale(1.1);
+      }
+      @media (max-width: 480px) {
+        body {
+          padding: 20px;
+        }
+        .carta {
+          padding: 20px;
+        }
+        .carta h2 {
+          font-size: 28px;
+        }
+        .carta p {
+          font-size: 14px;
+        }
+        .boton {
+          font-size: 14px;
+          padding: 10px 20px;
+        }
+      }
+    </style>
